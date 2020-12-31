@@ -46,7 +46,7 @@ extern "C"
 #ifdef STM32L053xx
 #include "stm32l0xx_hal.h"
 #endif
-#ifdef STM32L476xx
+#if defined(STM32L476xx) || defined(STM32L432xx)
 #include "stm32l4xx_hal.h"
 #endif
 #ifdef STM32L4R5xx
